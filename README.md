@@ -2,6 +2,9 @@
 
 Package decowriter provides a writer that add a prefix and a suffix to each line.
 
+[![Go Reference](https://pkg.go.dev/badge/github.com/goaux/decowriter.svg)](https://pkg.go.dev/github.com/goaux/decowriter)
+[![Go Report Card](https://goreportcard.com/badge/github.com/goaux/decowriter)](https://goreportcard.com/report/github.com/goaux/decowriter)
+
 A line is defines as a sequence of zero or more non-'\n' bytes followed by a '\n'.
 
 A prefix is written before one or more bytes of a line.

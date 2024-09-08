@@ -1,6 +1,6 @@
 // Package decowriter provides a writer that add a prefix and a suffix to each line.
 //
-// This package is the successor of github.com/goaux/prefixwriter.
+// This package is the successor of [github.com/goaux/prefixwriter].
 // Compared to prefixwriter, it is the caller's responsibility to use bufio with decowriter.
 // decowriter uses the underlying io.Writer directly.
 package decowriter
@@ -34,7 +34,7 @@ type Writer struct {
 // Ensure Writer implements io.Writer interface.
 var _ io.Writer = (*Writer)(nil)
 
-// New creates a new Writer that wraps the given io.Writer.
+// New creates a new [Writer] that wraps the given [io.Writer].
 func New(w io.Writer, prefix, suffix []byte) *Writer {
 	return &Writer{
 		w:      w,
@@ -65,7 +65,7 @@ func (w *Writer) Written() int64 {
 	return w.written
 }
 
-// Write implements the io.Writer interface. It writes the given byte slice to the
+// Write implements the [io.Writer] interface. It writes the given byte slice to the
 // underlying writer, adding the prefix at the beginning of each line,
 // adding the suffix at the end of each line.
 //
